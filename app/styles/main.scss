@@ -1,92 +1,108 @@
-$icon-font-path: '../fonts/';
-// bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-// endbower
+body {
+  background: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+.hero-unit {
+  margin: 0px auto 0 270px;
+  width: 75%;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #4B4E4E;
+  border-radius: 6px;
+  padding: 10px;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.hero-unit h1 {
+  font-size: 30px;
+  color: white;
+  line-height: 1;
+  letter-spacing: -1px;
+}
 
 .browserupgrade {
   margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
+  background: #4B4E4E;
+  color: black;
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.sidekick {
+  display:inline-block;
+  margin-top: 50px;
+  margin-left: 10px;
+  
+  width: 45%;
+  font-size: 12px;
+
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+  vertical-align: top;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
+.sidekick h1 {
+  font-size: 20px;
+  color: black;
+  line-height: 1;
+  letter-spacing: -1px;
 }
 
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+.sidekick span {
+  font-size: 16px;
+  margin: 10px;
+  padding: 10px;
 }
 
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
+.sidekick pre {
+  line-height: 15px;
+  font-size: 14px;
+  margin: 0;
+  white-space: pre-wrap;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.notready {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: red;
 }
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-.container-narrow > hr {
-  margin: 30px 0;
+.ready {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: green;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+.item {
+    width: 250px;
+   
+    float: left;
+    margin: 5px;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+.item.top{
+  position: absolute;
+  top: 0;
+  left:0;
+  background: #4B4E4E;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.item.about {
+  position: absolute;
+  top: 120px;
+  left: 0px;  
+}
+
+.logo {
+  content: url('../images/ethereum-workbench.png');
+  max-width: 100%;                    
+}
+.workbench {
+  max-width: 100%;                    
 }
